@@ -11,8 +11,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.example.demo.student.Student;
 
-@SpringBootApplication
-
+//@SpringBootApplication
+@SpringBootApplication(exclude = org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration.class)
 public class DemoApplication {
 
 	public static void main(String[] args) {
