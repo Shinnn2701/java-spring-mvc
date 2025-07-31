@@ -17,10 +17,8 @@ public class DemoApplication {
 
 	public static void main(String[] args) {
 
-		ApplicationContext hoidanit = SpringApplication.run(DemoApplication.class, args);
-		for (String s : hoidanit.getBeanDefinitionNames()) {
-			System.out.println(s);
-		}
+		SpringApplication.run(DemoApplication.class, args);
+
 	}
 
 }
