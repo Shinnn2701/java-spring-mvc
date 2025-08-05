@@ -11,9 +11,16 @@ import com.example.demo.services.UserService;
 
 public class UserController {
 
+    private UserService userService;
+
+    public UserController(UserService userService) {
+        this.userService = userService;
+    }
+
     @RequestMapping("/")
     public String getHomePage() {
-        return "hello from Controller";
+        String test = this.userService.handleHello();
+        return "hello";
     }
 }
 
